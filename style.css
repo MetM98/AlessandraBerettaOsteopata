@@ -444,7 +444,7 @@ footer {
     .hero-grid, .bio-grid, .services-container, .phil-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
-    .hero { height: auto; padding: 12rem 0; }
+    .hero { height: auto; padding: 6rem 0 8rem 0; }
     .hero h1 { font-size: 3rem; }
     .nav-links { display: none; }
     .container { padding: 0 1.5rem; }
