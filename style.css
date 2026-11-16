@@ -311,29 +311,35 @@ nav.open .nav-toggle span:last-child { top: 21.5px; transform: rotate(-45deg); }
 }
 
 .eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.5rem 1rem 0.5rem 0.85rem;
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--forest);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 1rem;
     margin-bottom: 2rem;
+    color: var(--forest);
 }
-.pulse-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #4F9A6B;
-    box-shadow: 0 0 0 0 rgba(79, 154, 107, 0.6);
-    animation: pulse 2.2s infinite;
+.eyebrow-role {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
 }
-@keyframes pulse {
-    70% { box-shadow: 0 0 0 10px rgba(79, 154, 107, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(79, 154, 107, 0); }
+.eyebrow-rule {
+    align-self: center;
+    width: 44px;
+    height: 1px;
+    background: var(--clay);
+}
+.eyebrow-place {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--muted);
+    font-variation-settings: "opsz" 24;
+}
+.eyebrow-place em {
+    font-style: italic;
+    color: var(--clay-dark);
 }
 
 .hero h1 {
