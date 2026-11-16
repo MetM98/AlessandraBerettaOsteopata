@@ -1022,7 +1022,7 @@ footer p a { color: rgba(247, 242, 234, 0.75); }
     .hero-visual { max-width: 420px; width: 100%; margin: 0 auto; padding: 0 1.25rem 1.25rem 0; order: -1; }
     .hero-visual::before { top: 1.25rem; left: 1.25rem; }
     .float-card-1 { left: -0.5rem; bottom: 12%; }
-    .float-card-2 { right: -0.5rem; top: 10%; }
+    .float-card-2 { right: -0.75rem; top: -0.75rem; }
     .spin-badge { width: 96px; height: 96px; left: -0.5rem; top: -0.5rem; }
     .hero-facts { gap: 1.5rem; }
     .hero-facts strong { font-size: 1.6rem; }
