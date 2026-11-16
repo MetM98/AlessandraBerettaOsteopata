@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informativa Privacy e Cookie | Dott.ssa Alessandra Beretta</title>
     <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
     <style>
         .privacy-content {
             max-width: 800px;
-            margin: 120px auto 80px auto;
+            margin: 4rem auto 5rem auto;
             padding: 0 1.5rem;
         }
 
@@ -95,12 +98,15 @@
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">Alessandra Beretta</a>
-        <div style="display: flex; gap: 1.5rem; align-items: center;">
-            <a href="index.html" style="text-decoration: none; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--text-primary); font-weight: 600; text-transform: uppercase;">Torna al sito</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="favicon.svg" alt="" width="34" height="34">
+                <span class="brand-name">Alessandra Beretta <small>Osteopata</small></span>
+            </a>
+            <a href="index.html" class="header-phone">Torna al sito</a>
         </div>
-    </nav>
+    </header>
 
     <main class="privacy-content">
         <a href="index.html" class="back-link">← Torna alla Home</a>
@@ -111,7 +117,7 @@
         
         <h2>1. Titolare del Trattamento</h2>
         <p>Il Titolare del trattamento dei dati personali è:<br>
-        <strong>Dott.ssa Alessandra Beretta – Medico Osteopata</strong><br>
+        <strong>Dott.ssa Alessandra Beretta – Osteopata</strong><br>
         Sede Studio Principale: Via Marco Lissoni 46, 20826 Misinto (MB)<br>
         Sede Studio Vercelli: Studio Professionale, Vercelli (VC)<br>
         Contatto Telefonico: +39 331 388 7369<br>
@@ -163,15 +169,17 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="tel:+393313887369">Tel: +39 331 388 7369</a>
-                <a href="https://wa.me/393313887369" target="_blank">WhatsApp</a>
-                <a href="https://instagram.com/osteopata_alessandraberetta" target="_blank">Instagram</a>
-            </div>
-            <p>© 2024 Alessandra Beretta • Osteopata</p>
+        <div class="container footer-inner">
+            <p class="footer-name">Dott.ssa Alessandra Beretta<br><span>Osteopata · Misinto e Vercelli</span></p>
+            <p class="social-links">
+                <a href="tel:+393313887369">+39 331 388 7369</a>
+                <a href="https://wa.me/393313887369" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="https://instagram.com/osteopata_alessandraberetta" target="_blank" rel="noopener">Instagram</a>
+            </p>
+            <p class="footer-legal">© <span id="year">2026</span> Alessandra Beretta · <a href="index.html">Torna al sito</a></p>
         </div>
     </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
