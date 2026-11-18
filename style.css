@@ -558,6 +558,8 @@ footer {
     .contact-direct { text-align: left; }
     .contact-links a { margin: 0 1.5rem 0 0; }
     .fab-wa { display: inline-flex; }
+    /* spazio sotto il footer, così il pulsante WhatsApp non copre il link alla privacy */
+    footer { padding-bottom: 6.5rem; }
 }
 
 @media (max-width: 560px) {
