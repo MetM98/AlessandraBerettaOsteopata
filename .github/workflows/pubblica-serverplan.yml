@@ -1,0 +1,35 @@
+# Carica il sito sull'hosting Serverplan (dominio .it) a ogni modifica su master.
+# Le credenziali FTP stanno nei Secrets del repository:
+#   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+name: Pubblica su Serverplan
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: pubblica-serverplan
+  cancel-in-progress: false
+
+jobs:
+  carica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Carica i file via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+            AGENTS.md
+            CLAUDE.md
